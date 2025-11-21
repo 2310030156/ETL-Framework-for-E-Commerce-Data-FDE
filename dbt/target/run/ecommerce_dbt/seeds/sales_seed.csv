@@ -1,0 +1,12 @@
+
+    
+    
+    truncate table "ecommerce"."analytics"."sales_seed";
+    -- dbt seed --
+    
+          insert into "ecommerce"."analytics"."sales_seed" ("order_id", "order_date", "customer_id", "product_id", "quantity", "price") values
+          (%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s),(%s,%s,%s,%s,%s,%s)
+      
+
+;
+  
